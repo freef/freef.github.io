@@ -1,0 +1,46 @@
+@import '~bootstrap/scss/bootstrap';
+
+
+body {
+  margin:0;
+  padding:0;
+  background-color:black;
+  color: white;
+}
+div {
+  margin:0;
+  padding:0;
+}
+h2 {
+  padding-left:2rem;
+  padding-top:2rem;
+}
+.topper {
+  margin:0;
+  padding:0;
+  text-shadow:black -2px 2px;
+  color:white;
+}
+.bio {
+  background-color: #FF4240;
+  padding-right:2rem;
+}
+.projects {
+  background-color: #00FF96;
+}
+.fine-art {
+  background-color: #14B2CC;
+}
+.resume {
+  background-color:#BCF5FF;
+}
+.skills {
+  padding-left:2rem;
+  padding-top:2rem;
+}
+
+/* $pgreen: #00FF96;
+$pteal: #14B2CC;
+$pgray: #BCF5FF;
+$pred: #FF4240;
+$ppurple: #CC1469; */
