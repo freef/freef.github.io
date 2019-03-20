@@ -7,5 +7,5 @@
 // require('./example')
 
 $(() => {
-  // your JS code goes here
+  $('.skills-link').click(() => { $('.skills').toggleClass('d-none') })
 })
