@@ -7,5 +7,29 @@
 // require('./example')
 
 $(() => {
-  $('.skills-link').click(() => { $('.skills').toggleClass('d-none') })
+  $('.about-me').hide()
+  $('.art').hide()
+  $('.work').hide()
+  $('.skills').hide()
+  $('.resume').hide()
+
+  $('.about-me-link').click(() => {
+    $('.about-me').fadeToggle('fast')
+  })
+
+  $('.art-link').click(() => {
+    $('.art').fadeToggle('fast')
+  })
+
+  $('.work-link').click(() => {
+    $('.work').fadeToggle('fast')
+  })
+
+  $('.skills-link').click(() => {
+    $('.skills').fadeToggle('fast')
+  })
+
+  $('.resume-link').click(() => {
+    $('.resume').fadeToggle('fast')
+  })
 })
