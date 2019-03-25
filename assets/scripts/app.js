@@ -14,6 +14,7 @@ $(() => {
   $('.work-link').on('click', disp.showSection)
   $('.art-link').on('click', disp.showSection)
   $('.resume-link').on('click', disp.showSection)
+  $('header').on('click', disp.resetPage)
   // $('header').click(() => {
   //   $('.about-me').hide()
   //   $('.art').hide()

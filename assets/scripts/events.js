@@ -6,6 +6,7 @@ const disp = {
     $('body').removeClass('black-bg')
   },
   fadeAll: () => {
+    $('.resume').hide()
     $('section').fadeOut('medium')
     $('body').removeClass('black-bg')
   },
@@ -22,6 +23,10 @@ const disp = {
       $(event.target).addClass('on')
       $('body').addClass('black-bg')
     }
+  },
+  resetPage: () => {
+    disp.fadeAll()
+    $('a').removeClass('on')
   }
   // showArt: (event) => {
   //   hideAll()
