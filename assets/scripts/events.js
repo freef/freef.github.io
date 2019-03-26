@@ -22,24 +22,36 @@ const disp = {
       $('body').addClass('black-bg')
     }
   },
+  hideBackSplash: () => {
+    $('.top-content').removeClass('art-backsplash')
+    $('.top-content').removeClass('work-backsplash')
+    $('.top-content').removeClass('skills-backsplash')
+    $('.top-content').removeClass('about-me-backsplash')
+    $('.top-content').removeClass('resume-backsplash')
+  },
   resetPage: () => {
     disp.fadeAll()
     $('a').removeClass('on')
+    disp.hideBackSplash()
+    $('.top-content').removeClass('whiteText').fadeIn('slow')
+    $('.top-content a').removeClass('whiteText').fadeIn('slow')
+    $('.top-content').removeClass('clearBG').fadeIn('slow')
   },
   linkMouseIn: (event) => {
     const inData = event.target.getAttribute('data-id')
+    disp.hideBackSplash()
     $('.top-content').addClass(`${inData}-backsplash`).fadeIn('slow')
     $('.top-content').addClass('whiteText').fadeIn('slow')
     $('.top-content a').addClass('whiteText').fadeIn('slow')
     $('.top-content').addClass('clearBG')
-  },
-  linkMouseLeave: (data) => {
-    const outData = event.target.getAttribute('data-id')
-    $('.top-content').removeClass(`${outData}-backsplash`).fadeIn('slow')
-    $('.top-content').removeClass('whiteText').fadeIn('slow')
-    $('.top-content a').removeClass('whiteText').fadeIn('slow')
-    $('.top-content').removeClass('clearBG').fadeIn('slow')
   }
+  // linkMouseLeave: (data) => {
+  //   const outData = event.target.getAttribute('data-id')
+  // //   $('.top-content').removeClass(`${outData}-backsplash`).fadeIn('slow')
+  //   $('.top-content').removeClass('whiteText').fadeIn('slow')
+  //   $('.top-content a').removeClass('whiteText').fadeIn('slow')
+  //   $('.top-content').removeClass('clearBG').fadeIn('slow')
+  // // }
 }
 
 module.exports = disp

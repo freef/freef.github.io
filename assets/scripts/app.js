@@ -1,5 +1,5 @@
 'use strict'
-var lozad = require('lozad')
+const lozad = require('lozad')
 const disp = require('./events.js')
 const observer = lozad() // lazy loads elements with default selector as '.lozad'
 
@@ -11,6 +11,7 @@ const observer = lozad() // lazy loads elements with default selector as '.lozad
 
 $(() => {
   observer.observe()
+  disp.hideBackSplash()
   disp.hideAll()
   $('.skills-link').on('click', disp.showSection)
   $('.about-me-link').on('click', disp.showSection)

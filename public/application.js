@@ -16470,6 +16470,7 @@ var observer = lozad(); // lazy loads elements with default selector as '.lozad'
 
 $(function () {
   observer.observe();
+  disp.hideBackSplash();
   disp.hideAll();
   $('.skills-link').on('click', disp.showSection);
   $('.about-me-link').on('click', disp.showSection);
@@ -16530,24 +16531,36 @@ var disp = {
       $('body').addClass('black-bg');
     }
   },
+  hideBackSplash: function hideBackSplash() {
+    $('.top-content').removeClass('art-backsplash');
+    $('.top-content').removeClass('work-backsplash');
+    $('.top-content').removeClass('skills-backsplash');
+    $('.top-content').removeClass('about-me-backsplash');
+    $('.top-content').removeClass('resume-backsplash');
+  },
   resetPage: function resetPage() {
     disp.fadeAll();
     $('a').removeClass('on');
+    disp.hideBackSplash();
+    $('.top-content').removeClass('whiteText').fadeIn('slow');
+    $('.top-content a').removeClass('whiteText').fadeIn('slow');
+    $('.top-content').removeClass('clearBG').fadeIn('slow');
   },
   linkMouseIn: function linkMouseIn(event) {
     var inData = event.target.getAttribute('data-id');
+    disp.hideBackSplash();
     $('.top-content').addClass(inData + '-backsplash').fadeIn('slow');
     $('.top-content').addClass('whiteText').fadeIn('slow');
     $('.top-content a').addClass('whiteText').fadeIn('slow');
     $('.top-content').addClass('clearBG');
-  },
-  linkMouseLeave: function linkMouseLeave(data) {
-    var outData = event.target.getAttribute('data-id');
-    $('.top-content').removeClass(outData + '-backsplash').fadeIn('slow');
-    $('.top-content').removeClass('whiteText').fadeIn('slow');
-    $('.top-content a').removeClass('whiteText').fadeIn('slow');
-    $('.top-content').removeClass('clearBG').fadeIn('slow');
   }
+  // linkMouseLeave: (data) => {
+  //   const outData = event.target.getAttribute('data-id')
+  // //   $('.top-content').removeClass(`${outData}-backsplash`).fadeIn('slow')
+  //   $('.top-content').removeClass('whiteText').fadeIn('slow')
+  //   $('.top-content a').removeClass('whiteText').fadeIn('slow')
+  //   $('.top-content').removeClass('clearBG').fadeIn('slow')
+  // // }
 };
 
 module.exports = disp;
