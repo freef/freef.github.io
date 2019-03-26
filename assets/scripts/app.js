@@ -1,6 +1,8 @@
 'use strict'
-
+var lozad = require('lozad')
 const disp = require('./events.js')
+const observer = lozad() // lazy loads elements with default selector as '.lozad'
+
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
 
@@ -8,6 +10,7 @@ const disp = require('./events.js')
 // require('./example')
 
 $(() => {
+  observer.observe()
   disp.hideAll()
   $('.skills-link').on('click', disp.showSection)
   $('.about-me-link').on('click', disp.showSection)
