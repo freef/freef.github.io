@@ -15,57 +15,6 @@ $(() => {
   $('.art-link').on('click', disp.showSection)
   $('.resume-link').on('click', disp.showSection)
   $('header').on('click', disp.resetPage)
-  // $('header').click(() => {
-  //   $('.about-me').hide()
-  //   $('.art').hide()
-  //   $('.work').hide()
-  //   $('.skills').hide()
-  //   $('.resume').hide()
-  //   $('body').removeClass('black-bg')
-  // })
-  //
-  // $('.about-me-link').click(() => {
-  //   $('.about-me').fadeToggle('medium')
-  //   $('.art').hide()
-  //   $('.work').hide()
-  //   $('.skills').hide()
-  //   $('.resume').hide()
-  //   $('body').addClass('black-bg')
-  // })
-  //
-  // $('.art-link').click(() => {
-  //   $('.art').fadeToggle('medium')
-  //   $('.about-me').hide()
-  //   $('.work').hide()
-  //   $('.skills').hide()
-  //   $('.resume').hide()
-  //   $('body').addClass('black-bg')
-  // })
-
-  // $('.work-link').click(() => {
-  //   $('.work').fadeToggle('medium')
-  //   $('.about-me').hide()
-  //   $('.art').hide()
-  //   $('.skills').hide()
-  //   $('.resume').hide()
-  //   $('body').addClass('black-bg')
-  // })
-  //
-  // $('.skills-link').click(() => {
-  //   $('.skills').fadeToggle('medium')
-  //   $('.about-me').hide()
-  //   $('.art').hide()
-  //   $('.work').hide()
-  //   $('.resume').hide()
-  //   $('body').addClass('black-bg')
-  // })
-  //
-  // $('.resume-link').click(() => {
-  //   $('.resume').fadeToggle('medium')
-  //   $('.about-me').hide()
-  //   $('.art').hide()
-  //   $('.work').hide()
-  //   $('.skills').hide()
-  //   $('body').addClass('black-bg')
-  // })
+  $('.nav-link').on('mouseenter', (event) => disp.linkMouseIn(event))
+  $('.nav-link').on('mouseleave', (event) => disp.linkMouseLeave(event))
 })

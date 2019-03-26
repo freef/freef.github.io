@@ -11,9 +11,7 @@ const disp = {
     $('body').removeClass('black-bg')
   },
   showSection: (event) => {
-    console.log('beep')
     disp.fadeAll()
-    console.log(event.target)
     if ($(event.target).hasClass('on')) {
       $('a').removeClass('on')
     } else {
@@ -27,19 +25,21 @@ const disp = {
   resetPage: () => {
     disp.fadeAll()
     $('a').removeClass('on')
+  },
+  linkMouseIn: (event) => {
+    const inData = event.target.getAttribute('data-id')
+    $('.top-content').addClass(`${inData}-backsplash`).fadeIn('slow')
+    $('.top-content').addClass('whiteText').fadeIn('slow')
+    $('.top-content a').addClass('whiteText').fadeIn('slow')
+    $('.top-content').addClass('clearBG')
+  },
+  linkMouseLeave: (data) => {
+    const outData = event.target.getAttribute('data-id')
+    $('.top-content').removeClass(`${outData}-backsplash`).fadeIn('slow')
+    $('.top-content').removeClass('whiteText').fadeIn('slow')
+    $('.top-content a').removeClass('whiteText').fadeIn('slow')
+    $('.top-content').removeClass('clearBG').fadeIn('slow')
   }
-  // showArt: (event) => {
-  //   hideAll()
-  // },
-  // showSkills: (event) => {
-  //   hideAll()
-  // },
-  // showAboutMe: (event) => {
-  //   hideAll()
-  // },
-  // showResume: (event) => {
-  //   hideAll()
-  // }
 }
 
 module.exports = disp
