@@ -17,4 +17,15 @@ Hi I'm Matt Freeland, artist & web developer. With my artwork I use abstract for
 
 While deepening my skills as a developer, I’ve also become fascinated by Product Management, supporting a diverse team in building the right things, finding the metaphors that help everyone get on the same page, and nurturing positive organization. -->
 
-This project grew out of a series of studies where I was looking for a faster way to build up jagged and organic textures. Each one was made by pouring melted wax onto the surface of water and lowering a torn plastic bag containing a brick through the melted wax. 
+This project grew out of a series of studies where I was looking for a faster way to build up jagged and organic textures. Each one was made by pouring melted wax onto the surface of water and lowering a torn plastic bag containing a brick through the melted wax.
+
+
+We all know that games are more fun when played together, but the random matchmaking services for online games leave a lot to be desired. I created this tool to make it easier to play online games together. On Mario Verde players can post events, each with a title, description, time, and some contact info.
+
+When planning this project I imagined it as an app where people could extend an invitiation to play games with the internet.
+
+It was important to me that this service have a low barrier to entry.
+
+The cactus was the site seemed a little desolate without 
+
+I developed Mario Verde to be as simple and intuative as possible.

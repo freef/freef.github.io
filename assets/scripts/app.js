@@ -13,6 +13,7 @@ $(() => {
   observer.observe()
   disp.hideBackSplash()
   disp.hideAll()
+  disp.flavorTextChange()
   $('.skills-link').on('click', disp.showSection)
   $('.about-me-link').on('click', disp.showSection)
   $('.work-link').on('click', disp.showSection)
@@ -20,5 +21,6 @@ $(() => {
   $('.resume-link').on('click', disp.showSection)
   $('header').on('click', disp.resetPage)
   $('.nav-link').on('mouseenter', (event) => disp.linkMouseIn(event))
-  $('.nav-link').on('mouseleave', (event) => disp.linkMouseLeave(event))
+
+  // $('.nav-link').on('mouseleave', (event) => disp.linkMouseLeave(event))
 })
