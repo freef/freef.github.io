@@ -26,6 +26,34 @@ When planning this project I imagined it as an app where people could extend an 
 
 It was important to me that this service have a low barrier to entry.
 
-The cactus was the site seemed a little desolate without 
+The cactus was the site seemed a little desolate without
 
 I developed Mario Verde to be as simple and intuative as possible.
+
+
+
+Hi I'm Matt Freeland, web developer and artist.
+
+I see strong parallels between both the artistic process and software devlopment
+
+
+
+Hi,
+
+I'm here to talk about my projects.
+
+I joined GA with the hope of learning some technical skills, to get experience with modern software development.
+
+After a few weeks of
+
+
+
+- checklist!
+[] GA Profile
+[] Add projects
+[] Change Resume to external link
+[] Expand about me
+[] Make changes to landing page
+[] figure out awkward white space
+[] place images in separate galleries
+[] optimize images for web

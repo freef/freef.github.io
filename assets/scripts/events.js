@@ -40,18 +40,24 @@ const disp = {
   linkMouseIn: (event) => {
     const inData = event.target.getAttribute('data-id')
     disp.hideBackSplash()
-    $('.top-content').addClass(`${inData}-backsplash`)
+    $('.top-content').addClass(`${inData}-backsplash`).fadeIn('slow')
     $('.top-content').addClass('whiteText').fadeIn('slow')
     $('.top-content a').addClass('whiteText').fadeIn('slow')
     $('.top-content').addClass('clearBG')
   },
   flavorTextChange: () => {
     setTimeout(() => {
-      const textOptions = ['Cat Person.', 'Pokemon Master.', 'Dungeon Master.', 'Coffee Drinker.', 'Cookie Devourer.', 'Rock Climber.', 'Bike Commuter.', 'Backpacker.']
+      const textOptions = ['Cat Person.', 'Pokemon Master.', 'Dungeon Master.', 'Coffee Drinker.', 'Road Tripper.', 'Museum Visitor.', 'Happy Camper.', 'Cookie Devourer.', 'Rock Climber.', 'Bike Commuter.', 'Backpacker.']
       const randNum = Math.floor(Math.random() * Math.floor((textOptions.length - 1)))
-      const nextText = textOptions[randNum]
-      $('.flavor-text').fadeOut('fast', () => { $('.flavor-text').text(nextText).fadeIn('slow') })
-      console.log(nextText)
+      let flvText
+      let nextText = textOptions[randNum]
+      while (nextText === flvText) {
+        nextText = textOptions[randNum]
+      }
+      $('.flavor-text').fadeOut('fast', () => {
+        $('.flavor-text').text(nextText).fadeIn('slow')
+        flvText = nextText
+      })
       disp.flavorTextChange()
     }, 5000)
   }

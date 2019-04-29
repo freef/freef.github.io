@@ -48,7 +48,7 @@ header {
 }
 
 section {
-  font-family: Raleway, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   margin-bottom: 1rem;
 }
@@ -105,34 +105,73 @@ width: 245px;
   padding: 0.25rem;
 }
 
+.project {
+  letter-spacing: 0.1rem;
+  margin: 1rem auto;
+   margin-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  display:flex;
+  justify-content: center;
+  max-width: 80%;
+  @media (min-width: 765px) {
+    max-width: 60%
+  }
+}
+
+.project-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.project-text {
+  display: flex;
+  flex-direction:column;
+  text-align: left;
+}
+
+.contact :link:hover {
+  text-decoration: none;
+  color: deeppink;
+}
+
 .art-backsplash {
   background-image: url("public/art-backsplash.jpg");
   background-size: cover;
   background-position: center;
+  border-bottom: 2px black solid;
 }
 
 .about-me-backsplash {
   background-image: url("public/misc/self-portrait-1-crop.jpg");
   background-size: cover;
   background-position: center;
+  border-bottom: 2px black solid;
+  border-bottom: 2px black solid;
 }
 
 .work-backsplash {
   background-image: url("public/glitch-images/DSC_0416.jpg");
   background-size: cover;
   background-position: right;
+  border-bottom: 2px black solid;
 }
 
 .skills-backsplash {
   background-image: url("public/skills-backsplash.jpg");
   background-size: cover;
   background-position: bottom;
+  border-bottom: 2px black solid;
 }
 
 .resume-backsplash {
   background-image: url("public/resume-backsplash.jpg");
   background-size: cover;
   background-position: center;
+  border-bottom: 2px black solid;
 }
 
 .footer {
@@ -207,6 +246,61 @@ width: 245px;
   color: deeppink;
 }
 
+.mario-verde-image {
+    background-image: url('public/mario-verde.png');
+    min-height: 200px;
+    min-width: 200px;
+    background-position:center;
+    background-size:cover;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+}
+.splattr-image {
+  background-image: url('public/splattr.png');
+  min-height: 200px;
+  min-width: 200px;
+  background-position:center;
+  background-size:cover;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+.letterbox-image {
+  background-image: url('public/letterbox.png');
+  min-height: 200px;
+  min-width: 200px;
+  background-position:center;
+  background-size:cover;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+.link-border {
+  display:flex;
+  font-family: sans-serif;
+  text-decoration: underline;
+  height: 3rem;
+  align-items:center;
+  justify-content:center;
+}
+.link-border :hover {
+  color: deeppink;
+}
+.tic-tac-image {
+  background-image: url('public/tic-tac.png');
+  min-height: 200px;
+  min-width: 200px;
+  background-position:center;
+  background-size:cover;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+.mario-verde {
+margin-bottom: 2rem;
+}
+
 .square {
   text-align: center;
   align-items: center;
@@ -223,6 +317,14 @@ width: 245px;
   text-align: center;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.react{
+  fill:white;
+}
+
 .skills {
   color: white;
   background-color: black;
@@ -231,10 +333,21 @@ width: 245px;
   padding-bottom: 3rem;
 }
 
+.visit{
+  text-align:center;
+}
+
 .whiteText {
+  transition: color .5s ease-in-out;
   color: white;
 }
 
+.white {
+  border: 2px solid white;
+  max-width: 60%;
+}
+
 .top-content {
+  transition: background-image .5s ease;
   background-color: white;
 }
